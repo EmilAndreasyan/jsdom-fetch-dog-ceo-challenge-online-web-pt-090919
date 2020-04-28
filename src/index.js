@@ -21,5 +21,3 @@ document.addEventListener("DOMContentLoaded", function(){
     ev.target.color = "yellow";
   })
 })
-
-
