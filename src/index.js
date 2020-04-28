@@ -1,6 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 document.addEventListener("DOMContentLoaded", function(){
-  const imgUrl = "https://images.dog.ceo/breeds/groenendael/n02105056_3745.jpg"
+  const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   const dogImageContainer = document.getElementById("dog-image-container");
   fetch(imgUrl)
   .then(resp => resp.json())
