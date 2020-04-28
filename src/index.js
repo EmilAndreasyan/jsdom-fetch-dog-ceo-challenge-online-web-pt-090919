@@ -10,13 +10,12 @@ document.addEventListener("DOMContentLoaded", function(){
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   const dogBreeds = document.getElementById("dog-breeds")
   const li = document.createElement('li')
-  const ul = document,createElement('ul')
   fetch(breedUrl)
   .then(resp => resp.json())
   .then(json => console.log(json))
   dogBreeds.appendChild(li)
   li.appendChild(breedUrl)
-  ul.appendChild(li)
+  dogBreeds.appendChild(li)
   
   li.addEventListener('click', (ev) => {
     ev.target.color = "yellow";
