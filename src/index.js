@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
   dogBreeds.appendChild(li)
   li.appendChild(breedUrl)
   
-  li.addEventListener('click', (ev) {
+  li.addEventListener('click', (ev) => {
     ev.target.color = "yellow";
   })
 })
